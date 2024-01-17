@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Cyber Assistant",
   "description": "Cyber Assistant extension",
-  "version": "1.0",
+  "version": "1.1",
   "action": {
     "default_popup": "popup.html"
   },
