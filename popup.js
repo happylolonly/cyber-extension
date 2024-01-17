@@ -3,8 +3,7 @@ async function getData() {
   const data = await request.json();
   const p = data["market_data"]["current_price"].usd;
 
-  document.getElementById("price").children[0].innerText =
-    p.toFixed(10) + "USD";
+  document.getElementById("price").children[0].innerText = p.toFixed(10) + "$";
 
   const n = (p * 10 ** 9).toFixed(1);
 
@@ -18,4 +17,5 @@ setInterval(() => {
 
 const hRate = 3.3;
 
-document.getElementById("h").children[0].innerText = hRate;
+document.getElementById("h").children[0].innerText =
+  hRate + " (hardcoded for now)";
